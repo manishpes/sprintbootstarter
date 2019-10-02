@@ -18,7 +18,7 @@ public class UserController {
     private static final Logger logger = LoggerFactory.getLogger(UserController.class);
 
     @Autowired
-    UserDao userDao;
+    UserDaoImpl userDao;
     @PostMapping("/adduser")
     public String AddUser(@RequestBody User user){
         logger.debug("Adding user with user name {} ", user.getfName());

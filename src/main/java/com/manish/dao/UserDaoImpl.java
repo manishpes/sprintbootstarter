@@ -11,6 +11,9 @@ import java.util.List;
 @Repository
 public class UserDaoImpl implements UserDao {
 
+    public UserDaoImpl(){
+
+    }
     @Autowired
     JdbcTemplate jdbcTemplate;
     @Override
